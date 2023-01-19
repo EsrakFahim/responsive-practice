@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #000000;
+        }
+
+        .calender-conteinar {
+            margin: 20px;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: 50px repeat(5, 90px);
+            row-gap: 20px;
+            column-gap: 10px;
+        }
+
+        .date,
+        .day {
+            background-color: #9de3ff;
+            font-size: 2rem;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+        }
+
+        .day {
+            background-color: lightgray;
+        }
+
+        .off-day {
+            background-color: #d3d3d3;
+            color: gray;
+            transition: 0.5s;
+        }
+
+        .holiday {
+            background-color: #9e2d2d;
+            transition: 0.5s;
+        }
+
+        .onday:hover {
+            box-shadow:
+                0 0 5px #9de3ff,
+                0 0 25px #9de3ff,
+                0 0 50px #9de3ff,
+                0 0 100px #9de3ff;
+            transform: scale(1.1);
+            font-size: 2.5rem;
+        }
+        .holiday:hover {
+            box-shadow:
+                0 0 5px #9e2d2d,
+                0 0 25px #9e2d2d,
+                0 0 50px #9e2d2d,
+                0 0 100px #9e2d2d;
+            transform: scale(1.1);
+            font-size: 2.5rem;
+        }
+        .off-day:hover {
+            box-shadow:
+                0 0 5px #d3d3d3,
+                0 0 25px #d3d3d3,
+                0 0 50px #d3d3d3,
+                0 0 100px #d3d3d3;
+            transform: scale(1.1);
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calender-conteinar">
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">T</div>
+        <div class="day holiday">F</div>
+        <div class="day">S</div>
+        <div class="date off-day">28</div>
+        <div class="date off-day">29</div>
+        <div class="date off-day">30</div>
+        <div class="date onday">1</div>
+        <div class="date onday">2</div>
+        <div class="date holiday">3</div>
+        <div class="date onday">4</div>
+        <div class="date onday">5</div>
+        <div class="date onday">6</div>
+        <div class="date onday">7</div>
+        <div class="date onday">8</div>
+        <div class="date onday">9</div>
+        <div class="date holiday">10</div>
+        <div class="date onday">11</div>
+        <div class="date onday">12</div>
+        <div class="date onday">13</div>
+        <div class="date onday">14</div>
+        <div class="date onday">15</div>
+        <div class="date onday">16</div>
+        <div class="date holiday">17</div>
+        <div class="date onday">18</div>
+        <div class="date onday">19</div>
+        <div class="date onday">20</div>
+        <div class="date onday">21</div>
+        <div class="date onday">22</div>
+        <div class="date onday">23</div>
+        <div class="date holiday">24</div>
+        <div class="date onday">25</div>
+        <div class="date onday">26</div>
+        <div class="date onday">27</div>
+        <div class="date onday">28</div>
+        <div class="date onday">29</div>
+        <div class="date onday">30</div>
+        <div class="date holiday">31 </div>
+        <div class="date off-day">1</div>
+    </div>
+</body>
+
+</html>
